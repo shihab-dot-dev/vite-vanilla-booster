@@ -1,6 +1,6 @@
 import "./style.scss";
-import { SBaseModalBoxComponent } from "./components/modal-box/index.js";
-import { SBaseHeaderComponent } from "./components/header/index.js";
+import { SBaseModalBoxComponent } from "@/components/modal-box/index.js";
+import { SBaseHeaderComponent } from "@/components/header/index.js";
 import "./router.js";
 
 window.addEventListener("DOMContentLoaded", () => {

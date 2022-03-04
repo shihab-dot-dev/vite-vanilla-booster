@@ -5,16 +5,18 @@
 *  Send grid integration
 *  .env file support
 *  Netlify cli to deploy
+*  added src alias config with intellisense working
 ---
 
 ## TODO :
 
 * Add storybook as entry point, where you list down installation, jsdoc link, demo link and all getting started terms
 * Keep it concised to CSR
+* PRPL - pattern readiness
 * lazy loading of component and scripts when needed
 * adding a notification bar(web-component) when the network is slow
 * adding notification bar when there the internet goes off and dull the screen so that user wont be able to interact with it
-* Try to add SSR - server first render then initiate SPA
+* Try to add SSR - server first render then initiate SPA - [ not in picture as of now]
 * if possible add deploy script to heruko or netlify
 
 ## **How to Run this project**
