@@ -4,6 +4,7 @@
 *  localhost served with https - for more realistic feel - using `vite-plugin-mkcert`
 *  Send grid integration
 *  .env file support
+*  Netlify cli to deploy
 ---
 
 ## TODO :
