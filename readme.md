@@ -38,3 +38,7 @@
 
 ### to preview the build
 `npm run preview`
+
+# common todo tasks
+* add git flow to the repo
+* change netlify or surge .sh configurations files
