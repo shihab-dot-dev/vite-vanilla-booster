@@ -1,8 +1,4 @@
 import Navigo from "navigo";
 
+console.log("router js is here", Navigo);
 const router = new Navigo("/");
-
-router.on("/#/shihab", function () {
-  // do something
-  console.log("welcome to shihab page");
-});

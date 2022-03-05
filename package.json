@@ -3,13 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --https",
+    "serve": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "netlify:help": "netlify help",
+    "netlify:login": "netlify login"
   },
   "devDependencies": {
+    "netlify-cli": "^9.9.2",
     "sass": "^1.49.7",
-    "vite": "^2.8.0"
+    "vite": "^2.8.0",
+    "vite-plugin-mkcert": "^1.6.0"
   },
   "dependencies": {
     "mustache": "^4.2.0",
