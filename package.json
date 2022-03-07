@@ -9,9 +9,10 @@
     "preview": "vite preview",
     "netlify": "ntl init",
     "netlify:open": "netlify open",
-    "netlify:help": "netlify help",
+    "netlify:status": "netlify status",
     "netlify:login": "netlify login",
-    "surge" : "surge dist"
+    "surge" : "surge dist",
+    "ncu" : "npx npm-check-updates"
   },
   "devDependencies": {
     "netlify-cli": "^9.9.2",
