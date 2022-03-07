@@ -9,29 +9,16 @@
 *  or you can up the site on surge.sh config for deployment `echo <DOMINE_NAME> > CNAME` or `npm run surge --domain <DOMINE_NAME>` [`url is in the CNAME file of root directory`]
 ---
 
-# Getting Started
+# To Reuse This as template 
 
 Use this repository as a GitHub template or use degit to clone to your machine with an empty git history:
 `npx degit shihab-dot-dev/vite-vanilla-booster.git#master my-app`
-## TODO :
-*  .env file support
-*  consider adding `PWA `
-*  consider adding `i18n`
-*  consider adding `vite-html-plugin`
-*  consider adding `uno css`
-*  consider adding `routing using navigo`
-*  consider adding check-env pckg
-*  consider adding `lerna`
-*  add `npm-check-updates` [https://www.npmjs.com/package/npm-check-updates], [https://chrispennington.blog/blog/how-to-update-npm-packages-safely-with-npm-check-updates/]
-* Add storybook as entry point, where you list down installation, jsdoc link, demo link and all getting started terms
-* Keep it concised to CSR
-* PRPL - pattern readiness
-* lazy loading of component and scripts when needed
-* adding a notification bar(web-component) when the network is slow
-* adding notification bar when there the internet goes off and dull the screen so that user wont be able to interact with it
-* Try to add SSR - server first render then initiate SPA - [ not in picture as of now]
-* if possible add deploy script to heruko or netlify
 
+`git init`
+
+if you have github cli then
+use cmd `gh repo create` and choose `Push an exsisting local repo to github` as option and accept default options that will
+push changes to remote
 ## **How to Run this project**
 **step 1** : Install The node modules needed
 
@@ -64,3 +51,23 @@ or
 # common todo tasks
 * add git flow to the repo
 * change netlify or surge .sh configurations files
+
+## TODO :
+*  .env file support
+*  consider adding `PWA `
+*  consider adding `i18n`
+*  consider adding `vite-html-plugin`
+*  consider adding `uno css`
+*  consider adding `routing using navigo`
+*  consider adding check-env pckg
+*  consider adding `lerna`
+*  add `npm-check-updates` [https://www.npmjs.com/package/npm-check-updates], [https://chrispennington.blog/blog/how-to-update-npm-packages-safely-with-npm-check-updates/]
+* Add storybook as entry point, where you list down installation, jsdoc link, demo link and all getting started terms
+* Keep it concised to CSR
+* PRPL - pattern readiness
+* lazy loading of component and scripts when needed
+* adding a notification bar(web-component) when the network is slow
+* adding notification bar when there the internet goes off and dull the screen so that user wont be able to interact with it
+* Try to add SSR - server first render then initiate SPA - [ not in picture as of now]
+* if possible add deploy script to heruko or netlify
+
