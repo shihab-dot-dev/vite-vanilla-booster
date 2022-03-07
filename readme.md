@@ -6,6 +6,8 @@
 *  .env file support
 *  Netlify cli to deploy
 *  added src alias config with intellisense working
+*  add netlify ci/cd pipeline config
+*  or you can up the site on surge.sh config for deployment `echo <DOMINE_NAME> > CNAME`
 ---
 
 ## TODO :
