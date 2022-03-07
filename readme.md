@@ -2,14 +2,23 @@
 
 ## **Features**
 *  localhost served with https - for more realistic feel - using `vite-plugin-mkcert`
+*  mustach.js integration for easy templating
 *  Netlify cli to deploy
-*  added src alias config with intellisense working
+*  added src alias config with intellisense working using `jsconfig` via `vite.config.js` file
 *  netlify ci/cd pipeline config with netlify.toml file
 *  or you can up the site on surge.sh config for deployment `echo <DOMINE_NAME> > CNAME` or `npm run surge --domain <DOMINE_NAME>` [`url is in the CNAME file of root directory`]
 ---
 
 ## TODO :
 *  .env file support
+*  consider adding `PWA `
+*  consider adding `i18n`
+*  consider adding `vite-html-plugin`
+*  consider adding `uno css`
+*  consider adding `routing using navigo`
+*  consider adding check-env pckg
+*  consider adding `lerna`
+*  add `npm-check-updates` [https://www.npmjs.com/package/npm-check-updates], [https://chrispennington.blog/blog/how-to-update-npm-packages-safely-with-npm-check-updates/]
 * Add storybook as entry point, where you list down installation, jsdoc link, demo link and all getting started terms
 * Keep it concised to CSR
 * PRPL - pattern readiness
