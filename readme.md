@@ -48,6 +48,15 @@
 ### to preview the build
 `npm run preview`
 
+---
+# Deployment Options
+### to deploy to surge.sh
+`npm run surge --domain <DOMINE_NAME>`
+or
+`npm run surge --domain vite-starter-shihab.surge.sh`
+
+### Deploy to Netlify
+`npm run netlify` from master branch
 # common todo tasks
 * add git flow to the repo
 * change netlify or surge .sh configurations files
