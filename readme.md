@@ -9,6 +9,10 @@
 *  or you can up the site on surge.sh config for deployment `echo <DOMINE_NAME> > CNAME` or `npm run surge --domain <DOMINE_NAME>` [`url is in the CNAME file of root directory`]
 ---
 
+# Getting Started
+
+Use this repository as a GitHub template or use degit to clone to your machine with an empty git history:
+`npx degit shihab-dot-dev/vite-vanilla-booster.git#master my-app`
 ## TODO :
 *  .env file support
 *  consider adding `PWA `
