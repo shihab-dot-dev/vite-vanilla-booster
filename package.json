@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "netlify:help": "netlify help",
-    "netlify:login": "netlify login"
+    "netlify:login": "netlify login",
+    "netlify" : "ntl init"
   },
   "devDependencies": {
     "netlify-cli": "^9.9.2",
