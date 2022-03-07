@@ -2,14 +2,14 @@
 
 ## **Features**
 *  localhost served with https - for more realistic feel - using `vite-plugin-mkcert`
-*  Send grid integration
-*  .env file support
 *  Netlify cli to deploy
 *  added src alias config with intellisense working
+*  netlify ci/cd pipeline config with netlify.toml file
+*  or you can up the site on surge.sh config for deployment `echo <DOMINE_NAME> > CNAME` or `npm run surge --domain <DOMINE_NAME>` [`url is in the CNAME file of root directory`]
 ---
 
 ## TODO :
-
+*  .env file support
 * Add storybook as entry point, where you list down installation, jsdoc link, demo link and all getting started terms
 * Keep it concised to CSR
 * PRPL - pattern readiness
