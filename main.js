@@ -14,6 +14,7 @@ window.addEventListener("DOMContentLoaded", () => {
   header.render();
 });
 
+console.log("testing netlify commit here");
 /** OR *********************************************************************
  *
  * window.addEventListener("load", () => {});

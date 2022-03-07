@@ -7,9 +7,12 @@
     "serve": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    
+    "netlify" : "ntl init",
+    "netlify:open" : "netlify open",
+
     "netlify:help": "netlify help",
-    "netlify:login": "netlify login",
-    "netlify" : "ntl init"
+    "netlify:login": "netlify login"
   },
   "devDependencies": {
     "netlify-cli": "^9.9.2",
