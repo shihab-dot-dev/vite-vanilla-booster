@@ -53,13 +53,15 @@ or
 * change netlify or surge .sh configurations files
 
 ## TODO :
+* add default loader till the `onLoad` event is fired
+* add a way to access env variabled to process.env `
 *  .env file support
 *  consider adding `PWA `
 *  consider adding `i18n`
 *  consider adding `vite-html-plugin`
 *  consider adding `uno css`
 *  consider adding `routing using navigo`
-*  consider adding check-env pckg
+*  consider adding check-env pckg - pckg like `vite-plugin-environment`
 *  consider adding `lerna`
 *  add `npm-check-updates` [https://www.npmjs.com/package/npm-check-updates], [https://chrispennington.blog/blog/how-to-update-npm-packages-safely-with-npm-check-updates/]
 * Add storybook as entry point, where you list down installation, jsdoc link, demo link and all getting started terms
