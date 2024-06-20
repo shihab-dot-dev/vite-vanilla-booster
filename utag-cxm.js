@@ -1,11 +1,9 @@
-//tealium universal tag - utag.loader ut4.0.202402160958, Copyright 2024 Tealium.com Inc. All Rights Reserved.
+//tealium universal tag - utag.loader ut4.0.202406121548, Copyright 2024 Tealium.com Inc. All Rights Reserved.
 var utag_condload = false;
 window.__tealium_twc_switch = false;
-console.log("test utag js for digi connect");
 try {
     try {
         function setDataLayer() {
-            console.log("from setdaa layer ");
             var a_pageName = "";
             if ((typeof document.querySelector("meta[property='og:title']") != "undefined") && (typeof document.querySelector("meta[property='og:title']") !== undefined) && (document.querySelector("meta[property='og:title']") !== null)) {
                 if (document.querySelector("meta[property='og:title']").hasAttribute("content") === true) {
@@ -117,9 +115,8 @@ try {
                 if (typeof (partnerApp.loginToken) != "undefined" && (partnerApp.loginToken) !== null) {
                     if (typeof (partnerApp.loginToken.user) != "undefined" && (partnerApp.loginToken.user) !== null) {
                         var fetchCustomerIndustry = localStorage.getItem('currCustomerIndustry')
-                        if(typeof fetchCustomerIndustry != "undefined" && fetchCustomerIndustry !== null){
+                        if (typeof fetchCustomerIndustry != "undefined" && fetchCustomerIndustry !== null) {
                             a_customerIndustry = fetchCustomerIndustry;
-                            console.log("a_customerIndustry", a_customerIndustry);
                         }
                     }
                 }
@@ -363,10 +360,8 @@ try {
             if ((typeof (window.utag_data.customer_type) == "undefined") || (window.utag_data.customer_type === "unknown account type") || (window.utag_data.customer_type === "") || (window.utag_data.customer_type === null)) {
                 window.utag_data.customer_type = a_accountType;
             }
-            // test 
-             if ((typeof (window.utag_data.customer_industry) == "undefined") || (window.utag_data.customer_industry === "unknown customer industry") || (window.utag_data.customer_industry === "") || (window.utag_data.customer_industry === null)) {
+            if ((typeof (window.utag_data.customer_industry) == "undefined") || (window.utag_data.customer_industry === "unknown customer industry") || (window.utag_data.customer_industry === "") || (window.utag_data.customer_industry === null)) {
                 window.utag_data.customer_industry = a_customerIndustry;
-                console.log('logging utag custiomer industry', window.utag_data.customer_industry);
             }
         }
         setDataLayer();
@@ -391,7 +386,7 @@ try {
                 }, 2000);
             }
         }
-        if ((a_currentDomain.indexOf("experience-dev.partnerportal.basf.com") !== -1) || (a_currentDomain.indexOf("experience-stage.partnerportal.basf.com") !== -1) || (a_currentDomain.indexOf("experience.partnerportal.basf.com") !== -1)) {
+        if ((a_currentDomain.indexOf("digitalconnect-itl.basf.com") !== -1) || (a_currentDomain.indexOf("digitalconnect-stage.basf.com") !== -1) || (a_currentDomain.indexOf("digitalconnect.basf.com") !== -1) || (a_currentDomain.indexOf("localhost") !== -1)) {
             if (!a_intervId) {
                 a_intervId = setInterval(function() {
                     console.log("partnerApp object polled every 2 seconds");
@@ -1830,7 +1825,7 @@ if (typeof utag == "undefined" && !utag_condload) {
                     t["tealium_datasource"] = utag.cfg.datasource;
                     t["tealium_account"] = o["ut.account"] = utag.cfg.utid.split("/")[0];
                     t["tealium_profile"] = o["ut.profile"] = utag.cfg.utid.split("/")[1];
-                    t["tealium_environment"] = o["ut.env"] = "qa";
+                    t["tealium_environment"] = o["ut.env"] = "dev";
                 } catch (e) {
                     utag.DB(e)
                 }
@@ -2817,13 +2812,13 @@ if (typeof utag == "undefined" && !utag_condload) {
         domain: utag.loader.lh(),
         datasource: "##UTDATASOURCE##".replace("##" + "UTDATASOURCE##", ""),
         secure_cookie: ("##UTSECURECOOKIE##".replace("##" + "UTSECURECOOKIE##", "") === "true") ? true : false,
-        path: "//tags.tiqcdn.com/utag/basf/cxm-tools/qa/",
-        utid: "basf/cxm-tools/202402160957",
+        path: "//tags.tiqcdn.com/utag/basf/cxm-tools/dev/",
+        utid: "basf/cxm-tools/202406121548",
         ignoreSessionStorage: false,
         ignoreLocalStorage: false,
         split_cookie: true
     };
-    utag.cfg.v = utag.cfg.template + "202402160958";
+    utag.cfg.v = utag.cfg.template + "202406121548";
     utag.cond = {
         18: 0,
         6: 0
@@ -2961,41 +2956,41 @@ if (typeof utag == "undefined" && !utag_condload) {
         }
         ];
         utag.handler.cfg_extend = [{
-            "end": 0,
-            "alr": 0,
-            "bwq": 0,
             "id": "45",
-            "blr": 1
+            "end": 0,
+            "blr": 1,
+            "alr": 0,
+            "bwq": 0
         }, {
+            "blr": 1,
+            "alr": 0,
             "bwq": 0,
             "id": "159",
-            "alr": 0,
-            "end": 0,
-            "blr": 1
+            "end": 0
         }, {
-            "end": 0,
+            "blr": 0,
             "alr": 1,
             "bwq": 0,
             "id": "4",
-            "blr": 0
+            "end": 0
         }, {
-            "end": 0,
-            "alr": 1,
             "bwq": 0,
-            "id": "16",
-            "blr": 0
-        }, {
-            "end": 0,
+            "blr": 0,
             "alr": 1,
-            "bwq": 0,
-            "id": "17",
-            "blr": 0
+            "end": 0,
+            "id": "16"
         }, {
-            "end": 1,
+            "bwq": 0,
+            "alr": 1,
+            "blr": 0,
+            "end": 0,
+            "id": "17"
+        }, {
+            "bwq": 0,
             "alr": 0,
-            "bwq": 0,
-            "id": "175",
-            "blr": 0
+            "blr": 0,
+            "end": 1,
+            "id": "175"
         }];
         utag.loader.initcfg = function() {
             utag.loader.cfg = {
